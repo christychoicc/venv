@@ -1,0 +1,23 @@
+To set up a virtual environment for each project folder, follow the following steps. 
+
+1. Check python version:
+python --version
+
+2. Copy and paste requirements.txt over to the project folder
+(more details of generating requirements.txt see below)
+
+3. Create virtual environment:
+python -m venv venv
+
+4. Activate virtual environment:
+venv\Scripts\Activate
+
+---
+
+To create a requirements.txt
+1. Install packages in the virtual environment
+(This is just an example of a list of packages)
+python -m pip install ipykernel jupyterlab notebook pandas numpy openpyxl xlrd pyarrow fastparquet matplotlib seaborn plotly geopandas shapely pyproj pyogrio rasterio rioxarray contextily folium mapclassify xyzservices osmnx networkx geopy scipy statsmodels scikit-learn requests tqdm
+
+2. Generate requirements file: 
+python -m pip freeze > requirements.tx
